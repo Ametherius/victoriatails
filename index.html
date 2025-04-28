@@ -136,7 +136,12 @@
         <div class="col-md-6">
             <div class="card bg-transparent border-0">
                 <div class="card-body">
-                    <form action="POST">
+                    <form action="https://formsubmit.co/kaori_004@hotmail.com" method="POST">
+
+                        <input type="hidden" name="_subject" value="New Booking Request">
+
+                        <input type="text" name="_honey" style="display: none;">
+
                         <label for="name" class="form-label">Name</label>
                         <input type="text" class="form-control mb-2" id="name" name="name" placeholder="Enter your name">
 
@@ -159,6 +164,12 @@
                             <option value="8">3:00 PM - 4:00 PM</option>
                             <option value="9">4:00 PM - 5:00 PM</option>
                         </select>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="correct" id="correct" required>
+                            <label class="form-check-label" for="correct">All the info above is correct</label>
+                        </div>
+
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
