@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victoria Tails - Pricing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container">
+            <a href="./index.html" class="navbar-brand">Victoria Tails</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./testimonials.html" class="nav-link">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./pricing.html" class="nav-link active">Prices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./appointment.html" class="nav-link">Book Appointment</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="pricing-section">
+        <div class="container-fluid">
+            <h2 class="text-center text-green mb-5">Pricing</h2>
+        </div>
+        <div class="container-fluid">
+            <div class="row g-4 justify-content-center">
+                <!-- Dog Walking Card -->
+                <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+                    <div class="card">
+                        <img src="./img/dog walking image.jpg" alt="Dog Walking" class="card-img">
+                        <div class="card-content">
+                            <div class="card-header border-0 py-3">
+                                <i class="fa-solid fa-dog fa-2x"></i>
+                                <h3 class="card-title mb-0">Dog Walking</h3>
+                            </div>
+                            <div class="accordion" id="walkingAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#walkingOne">
+                                            <i class="fa-solid fa-clock me-2"></i>30-Minute Walk
+                                        </button>
+                                    </h2>
+                                    <div id="walkingOne" class="accordion-collapse collapse show" data-bs-parent="#walkingAccordion">
+                                        <div class="accordion-body">
+                                            <p class="mb-2">Perfect for quick exercise and potty breaks</p>
+                                            <p class="price">$20</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#walkingTwo">
+                                            <i class="fa-solid fa-clock me-2"></i>60-Minute Walk
+                                        </button>
+                                    </h2>
+                                    <div id="walkingTwo" class="accordion-collapse collapse" data-bs-parent="#walkingAccordion">
+                                        <div class="accordion-body">
+                                            <p class="mb-2">Extended exercise and adventure time</p>
+                                            <p class="price">$35</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#walkingThree">
+                                            <i class="fa-solid fa-dog me-2"></i>Additional Dog
+                                        </button>
+                                    </h2>
+                                    <div id="walkingThree" class="accordion-collapse collapse" data-bs-parent="#walkingAccordion">
+                                        <div class="accordion-body">
+                                            <p class="mb-2">Add another dog to your walk</p>
+                                            <p class="price">+$10 per dog</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-3 py-3">
+                                <a href="./index.html#contact" class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- In-Home Visits Card -->
+                <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+                    <div class="card">
+                        <img src="./img/drop in.jpg" alt="Drop-in Visits" class="card-img">
+                        <div class="card-content">
+                            <div class="card-header border-0 py-3">
+                                <i class="fa-solid fa-house-user fa-2x"></i>
+                                <h3 class="card-title mb-0">Drop-in Visits</h3>
+                            </div>
+                            <div class="accordion" id="visitsAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#visitsOne">
+                                            <i class="fa-solid fa-clock me-2"></i>30-Minute Visit
+                                        </button>
+                                    </h2>
+                                    <div id="visitsOne" class="accordion-collapse collapse show" data-bs-parent="#visitsAccordion">
+                                        <div class="accordion-body">
+                                            <p class="mb-2">Feeding, water, and quick playtime</p>
+                                            <p class="price">$20</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#visitsTwo">
+                                            <i class="fa-solid fa-clock me-2"></i>60-Minute Visit
+                                        </button>
+                                    </h2>
+                                    <div id="visitsTwo" class="accordion-collapse collapse" data-bs-parent="#visitsAccordion">
+                                        <div class="accordion-body">
+                                            <p class="mb-2">Extended care and attention</p>
+                                            <p class="price">$30</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#visitsThree">
+                                            <i class="fa-solid fa-paw me-2"></i>Extra Pet
+                                        </button>
+                                    </h2>
+                                    <div id="visitsThree" class="accordion-collapse collapse" data-bs-parent="#visitsAccordion">
+                                        <div class="accordion-body">
+                                            <p class="mb-2">Add another pet to your visit</p>
+                                            <p class="price">+$10 per pet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-3 py-3">
+                                <a href="./index.html#contact" class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Overnight Stays Card -->
+                <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+                    <div class="card">
+                        <img src="./img/in home.jpg" alt="In-Home Pet Sitting" class="card-img">
+                        <div class="card-content">
+                            <div class="card-header border-0 py-3">
+                                <i class="fa-solid fa-house fa-2x"></i>
+                                <h3 class="card-title mb-0">In-home Pet Sitting</h3>
+                            </div>
+                            <div class="accordion" id="overnightAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#overnightOne">
+                                            <i class="fa-solid fa-moon me-2"></i>Overnight Stay
+                                        </button>
+                                    </h2>
+                                    <div id="overnightOne" class="accordion-collapse collapse show" data-bs-parent="#overnightAccordion">
+                                        <div class="accordion-body">
+                                            <p class="mb-2">Full overnight care and attention</p>
+                                            <p class="price">$65 per night</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#overnightTwo">
+                                            <i class="fa-solid fa-clock me-2"></i>24/7 Care
+                                        </button>
+                                    </h2>
+                                    <div id="overnightTwo" class="accordion-collapse collapse" data-bs-parent="#overnightAccordion">
+                                        <div class="accordion-body">
+                                            <p class="mb-2">Constant care and attention throughout the day</p>
+                                            <p class="price">$85 per day</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#overnightThree">
+                                            <i class="fa-solid fa-dog me-2"></i>Additional Pet
+                                        </button>
+                                    </h2>
+                                    <div id="overnightThree" class="accordion-collapse collapse" data-bs-parent="#overnightAccordion">
+                                        <div class="accordion-body">
+                                            <p class="mb-2">Care for additional pets during the stay</p>
+                                            <p class="price">+$25/dog, +$15/cat</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-3 py-3">
+                                <a href="./index.html#contact" class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Extra Services Card -->
+                <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+                    <div class="card">
+                        <img src="./img/pet taxi.jpg" alt="Extra Services" class="card-img">
+                        <div class="card-content">
+                            <div class="card-header border-0 py-3">
+                                <i class="fa-solid fa-plus fa-2x"></i>
+                                <h3 class="card-title mb-0">Extra Services</h3>
+                            </div>
+                            <div class="accordion" id="extraAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#extraOne">
+                                            <i class="fa-solid fa-broom me-2"></i>Home Cleaning
+                                        </button>
+                                    </h2>
+                                    <div id="extraOne" class="accordion-collapse collapse show" data-bs-parent="#extraAccordion">
+                                        <div class="accordion-body">
+                                            <p class="mb-2">Keep your home tidy while you're away</p>
+                                            <p class="price">*Prices Coming Soon</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#extraTwo">
+                                            <i class="fa-solid fa-shower me-2"></i>Dog Wash
+                                        </button>
+                                    </h2>
+                                    <div id="extraTwo" class="accordion-collapse collapse" data-bs-parent="#extraAccordion">
+                                        <div class="accordion-body">
+                                            <p class="mb-2">Fresh and clean for your return</p>
+                                            <p class="price">*Prices Coming Soon</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#extraThree">
+                                            <i class="fa-solid fa-car me-2"></i>Pet Taxi
+                                        </button>
+                                    </h2>
+                                    <div id="extraThree" class="accordion-collapse collapse" data-bs-parent="#extraAccordion">
+                                        <div class="accordion-body">
+                                            <p class="mb-2">Transportation to vet or groomer</p>
+                                            <p class="price">Rates vary depending on the distance</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#extraFour">
+                                            <i class="fa-solid fa-ring me-2"></i>Wedding Day Care
+                                        </button>
+                                    </h2>
+                                    <div id="extraFour" class="accordion-collapse collapse" data-bs-parent="#extraAccordion">
+                                        <div class="accordion-body">
+                                            <p class="mb-2">Care for your pet during your wedding day</p>
+                                            <p class="price">*Prices Coming Soon</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-3 py-3">
+                                <a href="./index.html#contact" class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+ <section class="cta-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <h2 class="text-green mb-4">Tail-wagging care starts here!</h2>
+                <p class="mb-4">Schedule a visit today!</p>
+                <a href="./appointment" class="btn btn-primary btn-lg px-5 py-3">Book an Appointment</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-2 mb-md-0">
+                    <a href="./index.html" class="text-white text-decoration-none fw-bold">Victoria Tails</a>
+                </div>
+                <div class="col-md-4 text-center mb-2 mb-md-0">
+                    <div class="social-links">
+                        <a href="https://wa.me/12269665299" class="text-white mx-2 text-decoration-none">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="tel:2269665299" class="text-white mx-2 text-decoration-none">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                        <a href="mailto:kaori_004@hotmail.com" class="text-white mx-2 text-decoration-none">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <small>&copy; <span id="year"></span> Victoria Tails</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
