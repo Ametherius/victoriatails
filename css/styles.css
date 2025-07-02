@@ -564,18 +564,21 @@ html, body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     border: 2px solid var(--primary-color);
-    height: calc(100vh - 120px); /* Full height minus navbar and margins */
+    height: calc(100vh - 120px);
 }
 
 .calendar-wrapper {
     position: relative;
     height: 100%;
+    width: 100%;
 }
 
 .appointment-calendar {
     border: none;
     border-radius: 0;
     box-shadow: none;
+    width: 100%;
+    height: 100%;
 }
 
 /* Calendar Footer Cover */
@@ -642,6 +645,15 @@ html, body {
 
 /* Mobile responsive adjustments for calendar */
 @media (max-width: 768px) {
+    .calendar-section {
+        height: 100vh;
+        padding: 0;
+    }
+    
+    .calendar-card {
+        height: calc(100vh - 120px);
+    }
+    
     .calendar-footer-cover {
         height: 100px;
     }
@@ -668,6 +680,15 @@ html, body {
 }
 
 @media (max-width: 576px) {
+    .calendar-section {
+        height: 100vh;
+        padding: 0;
+    }
+    
+    .calendar-card {
+        height: calc(100vh - 120px);
+    }
+    
     .calendar-footer-cover {
         height: 90px;
     }
