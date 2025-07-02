@@ -534,9 +534,9 @@ html, body {
 
 /* Calendar Section */
 .calendar-section {
-    min-height: calc(100vh - 100px);
+    height: 100vh;
     margin-top: 100px;
-    padding: 0 0 80px 0;
+    padding: 0;
 }
 
 .calendar-section h2 {
@@ -564,8 +564,7 @@ html, body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     border: 2px solid var(--primary-color);
-    height: calc(100vh - 280px);
-    max-height: 600px;
+    height: calc(100vh - 120px);
 }
 
 .calendar-wrapper {
@@ -647,14 +646,13 @@ html, body {
 /* Mobile responsive adjustments for calendar */
 @media (max-width: 768px) {
     .calendar-section {
-        min-height: calc(100vh - 80px);
-        padding: 0 0 60px 0;
+        height: 100vh;
+        padding: 0;
         margin-top: 80px;
     }
     
     .calendar-card {
-        height: calc(100vh - 240px);
-        max-height: 500px;
+        height: calc(100vh - 160px);
         margin: 0 10px;
     }
     
@@ -685,14 +683,13 @@ html, body {
 
 @media (max-width: 576px) {
     .calendar-section {
-        min-height: calc(100vh - 70px);
-        padding: 0 0 50px 0;
+        height: 100vh;
+        padding: 0;
         margin-top: 70px;
     }
     
     .calendar-card {
-        height: calc(100vh - 220px);
-        max-height: 450px;
+        height: calc(100vh - 180px);
         margin: 0 5px;
     }
     
@@ -724,14 +721,13 @@ html, body {
 /* Extra small devices */
 @media (max-width: 480px) {
     .calendar-section {
-        min-height: calc(100vh - 60px);
-        padding: 0 0 40px 0;
+        height: 100vh;
+        padding: 0;
         margin-top: 60px;
     }
     
     .calendar-card {
         height: calc(100vh - 200px);
-        max-height: 400px;
         margin: 0 2px;
     }
     
@@ -764,6 +760,7 @@ html, body {
 footer {
     background-color: var(--primary-color);
     padding: var(--spacing-md);
+    margin-top: var(--spacing-xl);
 }
 
 .social-links i {
