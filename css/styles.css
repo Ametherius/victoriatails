@@ -36,8 +36,22 @@ html, body {
     font-family: "Josefin Sans", sans-serif;
 }
 
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
 .navbar {
-    background-color: var(--transparent-green);
+    background-color: var(--primary-color);
+    z-index: 1030;
+
+}
+
+.navbar-collapse {
+    z-index: 1031;
 }
 
 .navbar-brand {
@@ -54,9 +68,27 @@ html, body {
     padding: 3px;
 }
 
+@media (max-width: 767.98px) {
+
+    
+    .navbar-toggler {
+        border: 3px solid white;
+        padding: 4px 8px;
+    }
+    
+    .navbar-toggler:focus {
+        box-shadow: none;
+        outline: none;
+    }
+
+    .hero-section {
+        margin-top: 20px;
+    }
+}
+
 .nav-link{
     color: var(--text-light);
-    margin: var(--spacing-sm);
+    padding: var(--spacing-sm);
 }
 
 .nav-link:hover {
