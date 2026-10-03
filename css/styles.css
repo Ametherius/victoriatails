@@ -1014,3 +1014,36 @@ footer {
         bottom: -2rem;
     }
 }
+/* Service Request Form */
+.request-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.request-section h2 {
+    font-size: var(--font-size-xxl);
+}
+
+.request-form {
+    max-width: 900px;
+}
+
+.request-card {
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+}
+
+.request-card:hover {
+    transform: none;
+}
+
+.request-form .form-control:focus,
+.request-form .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(72, 111, 72, 0.25);
+}
+
+@media (max-width: 576px) {
+    .request-section h2 {
+        font-size: var(--font-size-xl);
+    }
+}

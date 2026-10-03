@@ -50,7 +50,7 @@
                                 <i class="fa-solid fa-calendar-check me-2"></i>
                                 Book Your Appointment
                             </h5>
-                            <p class="mb-2">Use the buttons below to contact me to book your appointment!</p>
+                            <p class="mb-2">Use the buttons below to contact me, or <a href="#request" class="text-green fw-bold">fill out the request form</a>!</p>
                             <div class="contact-links">
                                 <a href="https://wa.me/12269665299" class="contact-link">
                                     <i class="fa-brands fa-whatsapp"></i>
@@ -68,6 +68,206 @@
             </div>
         </div>
      </section>
+
+    <!-- Service Request Form -->
+    <section class="request-section" id="request">
+        <div class="container">
+            <h2 class="text-center text-green mb-3">Service Request</h2>
+            <p class="text-center mb-5">Tell me about your dog and the service you need, and I'll get back to you to confirm.</p>
+
+            <form id="request-form" class="request-form mx-auto" novalidate>
+                <!-- Honeypot: hidden from people, bots tend to fill it -->
+                <input type="text" name="website" class="d-none" tabindex="-1" autocomplete="off">
+
+                <!-- Owner & Contact -->
+                <div class="card request-card mb-4">
+                    <div class="card-body">
+                        <h4 class="text-green mb-4"><i class="fa-solid fa-user me-2"></i>Your Contact Info</h4>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="owner_name" class="form-label">Your name *</label>
+                                <input type="text" class="form-control" id="owner_name" name="owner_name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="owner_email" class="form-label">Email *</label>
+                                <input type="email" class="form-control" id="owner_email" name="owner_email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="owner_phone" class="form-label">Phone / WhatsApp</label>
+                                <input type="tel" class="form-control" id="owner_phone" name="owner_phone">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="contact_method" class="form-label">Preferred contact method *</label>
+                                <select class="form-select" id="contact_method" name="contact_method" required>
+                                    <option value="Email">Email</option>
+                                    <option value="WhatsApp">WhatsApp</option>
+                                    <option value="Phone call / text">Phone call / text</option>
+                                    <option value="Instagram">Instagram</option>
+                                    <option value="Facebook Messenger">Facebook Messenger</option>
+                                </select>
+                            </div>
+                            <div class="col-12 d-none" id="social_handle_group">
+                                <label for="social_handle" class="form-label">Instagram / Facebook username *</label>
+                                <input type="text" class="form-control" id="social_handle" name="social_handle" placeholder="@yourusername">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service -->
+                <div class="card request-card mb-4">
+                    <div class="card-body">
+                        <h4 class="text-green mb-4"><i class="fa-solid fa-calendar-days me-2"></i>Service</h4>
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <label for="service" class="form-label">Service *</label>
+                                <select class="form-select" id="service" name="service" required>
+                                    <option value="" selected disabled>Choose...</option>
+                                    <option>Dog Walking</option>
+                                    <option>Drop-in Visits</option>
+                                    <option>House Sitting</option>
+                                    <option>Boarding</option>
+                                    <option>Doggy Day Care</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="start_date" class="form-label">Tentative start date *</label>
+                                <input type="date" class="form-control" id="start_date" name="start_date" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="end_date" class="form-label">End date (if multiple days)</label>
+                                <input type="date" class="form-control" id="end_date" name="end_date">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About the Dog -->
+                <div class="card request-card mb-4">
+                    <div class="card-body">
+                        <h4 class="text-green mb-4"><i class="fa-solid fa-dog me-2"></i>About Your Dog</h4>
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <label for="dog_name" class="form-label">Name *</label>
+                                <input type="text" class="form-control" id="dog_name" name="dog_name" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="dog_age" class="form-label">Age *</label>
+                                <input type="text" class="form-control" id="dog_age" name="dog_age" placeholder="e.g. 3 years, 8 months" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="dog_breed" class="form-label">Breed / size</label>
+                                <input type="text" class="form-control" id="dog_breed" name="dog_breed" placeholder="e.g. Beagle, medium">
+                            </div>
+                            <div class="col-12">
+                                <label for="personality" class="form-label">Personality</label>
+                                <textarea class="form-control" id="personality" name="personality" rows="2" placeholder="Playful, shy with strangers, loves fetch..."></textarea>
+                            </div>
+                            <div class="col-12">
+                                <label for="allergies" class="form-label">Allergies / medical needs</label>
+                                <textarea class="form-control" id="allergies" name="allergies" rows="2" placeholder="Food allergies, medications, health conditions... or &quot;None&quot;"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Socialization -->
+                <div class="card request-card mb-4">
+                    <div class="card-body">
+                        <h4 class="text-green mb-4"><i class="fa-solid fa-paw me-2"></i>Socialization</h4>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="friendly_dogs" class="form-label"><i class="fa-solid fa-dog me-2 text-green"></i>Friendly with dogs?</label>
+                                <select class="form-select" id="friendly_dogs" name="friendly_dogs">
+                                    <option>Yes</option><option>No</option><option selected>Unsure</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="friendly_cats" class="form-label"><i class="fa-solid fa-cat me-2 text-green"></i>Friendly with cats?</label>
+                                <select class="form-select" id="friendly_cats" name="friendly_cats">
+                                    <option>Yes</option><option>No</option><option selected>Unsure</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="friendly_children" class="form-label"><i class="fa-solid fa-child me-2 text-green"></i>Friendly with children?</label>
+                                <select class="form-select" id="friendly_children" name="friendly_children">
+                                    <option>Yes</option><option>No</option><option selected>Unsure</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="spayed_neutered" class="form-label"><i class="fa-solid fa-venus-mars me-2 text-green"></i>Spayed / neutered?</label>
+                                <select class="form-select" id="spayed_neutered" name="spayed_neutered">
+                                    <option>Yes</option><option>No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Care -->
+                <div class="card request-card mb-4">
+                    <div class="card-body">
+                        <h4 class="text-green mb-4"><i class="fa-solid fa-heart me-2"></i>Care</h4>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="potty_breaks" class="form-label"><i class="fa-solid fa-tree me-2 text-green"></i>Potty breaks needed</label>
+                                <select class="form-select" id="potty_breaks" name="potty_breaks">
+                                    <option>Every hour</option>
+                                    <option>Every 2 hours</option>
+                                    <option selected>Every 4 hours</option>
+                                    <option>Every 8 hours</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="alone_time" class="form-label"><i class="fa-solid fa-stopwatch me-2 text-green"></i>Can be left alone for</label>
+                                <select class="form-select" id="alone_time" name="alone_time">
+                                    <option>Less than 1 hour</option>
+                                    <option>1-4 hours</option>
+                                    <option selected>4-8 hours</option>
+                                    <option>8+ hours</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="feeding" class="form-label"><i class="fa-solid fa-utensils me-2 text-green"></i>Feeding</label>
+                                <select class="form-select" id="feeding" name="feeding">
+                                    <option>Once a day</option>
+                                    <option selected>Twice a day</option>
+                                    <option>Three times a day</option>
+                                    <option>Free feeding</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="energy_level" class="form-label"><i class="fa-solid fa-bolt me-2 text-green"></i>Energy level</label>
+                                <select class="form-select" id="energy_level" name="energy_level">
+                                    <option>Low</option>
+                                    <option selected>Moderate</option>
+                                    <option>High</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="microchipped" class="form-label"><i class="fa-solid fa-microchip me-2 text-green"></i>Microchipped?</label>
+                                <select class="form-select" id="microchipped" name="microchipped">
+                                    <option>Yes</option><option>No</option><option>Unsure</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="notes" class="form-label">Anything else I should know?</label>
+                                <textarea class="form-control" id="notes" name="notes" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="request-status" class="alert d-none" role="alert"></div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg px-5" id="request-submit">
+                        <i class="fa-solid fa-paper-plane me-2"></i>Send Request
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
 
      <!-- CTA Section -->
     
@@ -102,5 +302,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="./js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="./js/request-form.js"></script>
 </body>
 </html>
