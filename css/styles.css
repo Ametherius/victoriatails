@@ -1017,33 +1017,185 @@ footer {
 /* Service Request Form */
 .request-section {
     padding: var(--spacing-xl) 0;
+    scroll-margin-top: 70px;
 }
 
 .request-section h2 {
     font-size: var(--font-size-xxl);
 }
 
-.request-form {
-    max-width: 900px;
-}
-
 .request-card {
-    border: 2px solid var(--primary-color);
+    max-width: 760px;
+    border: none;
     border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .request-card:hover {
     transform: none;
 }
 
-.request-form .form-control:focus,
-.request-form .form-select:focus {
+.request-card .card-body {
+    padding: var(--spacing-md);
+}
+
+.request-section .form-control:focus,
+.request-section .form-select:focus {
     border-color: var(--primary-color);
     box-shadow: 0 0 0 0.2rem rgba(72, 111, 72, 0.25);
+}
+
+/* Step indicator */
+.request-steps {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--spacing-md);
+}
+
+.request-step {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #9aa5a0;
+    font-weight: 600;
+}
+
+.request-step span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 2px solid currentColor;
+}
+
+.request-step.active,
+.request-step.done {
+    color: var(--primary-color);
+}
+
+.request-step.active span,
+.request-step.done span {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+.request-divider {
+    margin: 0.5rem 0;
+    opacity: 0.1;
+}
+
+.request-subtitle {
+    color: var(--primary-color);
+    margin: var(--spacing-md) 0 0.75rem;
+}
+
+/* Pill choices (Socialization & Care) */
+.choice-list {
+    border: 1px solid #e6ebe6;
+    border-radius: 12px;
+}
+
+.choice-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    padding: 0.75rem 1rem;
+}
+
+.choice-row + .choice-row {
+    border-top: 1px solid #e6ebe6;
+}
+
+.choice-label i {
+    width: 1.5rem;
+    margin-right: 0.5rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.choice-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.btn-pill {
+    min-width: 3.25rem;
+    padding: 0.3rem 0.85rem;
+    border: 1px solid #cfd8cf;
+    border-radius: 50rem;
+    font-size: var(--font-size-sm);
+    color: var(--text-dark);
+    background-color: #fff;
+}
+
+.btn-pill:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-check:checked + .btn-pill {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+.btn-check:focus-visible + .btn-pill {
+    box-shadow: 0 0 0 0.2rem rgba(72, 111, 72, 0.25);
+}
+
+/* Buttons centered at the bottom of each step */
+.request-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: var(--spacing-md);
+}
+
+.request-actions .btn-primary:hover {
+    transform: none;
+}
+
+.request-success i {
+    font-size: var(--font-size-xxl);
 }
 
 @media (max-width: 576px) {
     .request-section h2 {
         font-size: var(--font-size-xl);
+    }
+
+    .request-card .card-body {
+        padding: 1.25rem;
+    }
+
+    .request-steps {
+        gap: var(--spacing-sm);
+        font-size: var(--font-size-sm);
+    }
+
+    .choice-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .request-actions {
+        flex-wrap: nowrap;
+    }
+
+    .request-actions .btn {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 1rem;
+        white-space: nowrap;
     }
 }
